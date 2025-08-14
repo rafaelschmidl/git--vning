@@ -70,3 +70,35 @@ Klara kriterier:
 - Kod går att köra eller felsökning dokumenterad.
 - Nytt GitHub‑repo skapat och första push genomförd via SSH.
 - (Bonus) PR skapad från en feature‑branch.
+
+## How to run (quickstart)
+
+1) Skapa och aktivera virtuell miljö
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+2) Lägg till kravfil och installera beroenden
+
+```bash
+cat > requirements.txt << 'EOF'
+python-dotenv
+numpy
+EOF
+pip install -r requirements.txt
+```
+
+3) Miljöfiler
+
+```bash
+echo "SUPER_SECRET_PHRASE=1up" > .env.example
+cp .env.example .env
+```
+
+4) Kör
+
+```bash
+python app.py
+```

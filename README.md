@@ -102,3 +102,8 @@ cp .env.example .env
 ```bash
 python app.py
 ```
+
+---
+
+Hello, Git!
+This is my first project with Git.
